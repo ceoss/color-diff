@@ -26,11 +26,13 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+'use strict';
+
 /**
  * IMPORTS
  */
-var assert = require('assert');
-var color_diff = require('../lib/diff');
+const assert = require('assert');
+const color_diff = require('../lib/diff');
 
 /**
  * TESTS

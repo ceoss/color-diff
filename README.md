@@ -22,7 +22,10 @@ Are located in the `test/` folder and are run by:
 ## Usage
 
 ```js
+// ES5
 var diff = require('color-diff');
+// ES6 Commonjs
+const diff = require('color-diff');
 ```
 
 ### diff.closest(color, palette, bc)
@@ -31,9 +34,9 @@ Returns the closest color. The parameter bc is optional and is used as
 background color when the color and/or palette uses alpha channels.
 
 ```js
-var color = { R: 255, G: 1, B: 30 };
+const color = { R: 255, G: 1, B: 30 };
 // red, green, blue
-var palette = [ {R: 255, G: 0, B: 0 },
+const palette = [ {R: 255, G: 0, B: 0 },
                 {R: 0, G: 255, B: 0 },
                 {R: 0, G: 0, B: 255} ];
 
@@ -49,9 +52,9 @@ Returns the most different color. The parameter bc is optional and is used as
 background color when the color and/or palette uses alpha channels.
 
 ```js
-var color = { R: 255, G: 255, B: 255 };
+const color = { R: 255, G: 255, B: 255 };
 // black, white
-var palette = [ {R: 0, G: 0, B: 0 }, {R: 255, G: 255, B: 255 } ];
+const palette = [ {R: 0, G: 0, B: 0 }, {R: 255, G: 255, B: 255 } ];
 
 diff.furthest(color, palette); // {R: 0, G: 0, B: 0 }, black
 ```
